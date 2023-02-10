@@ -1,0 +1,6 @@
+<div
+  *ngIf="errorService.error$ | async"
+  class="h-[50px] flex justify-center items-center bg-red-400 text-white"
+>
+  {{ errorService.error$ | async }}
+</div>
